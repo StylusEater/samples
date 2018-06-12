@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 #define MAX_WORD 44
 
@@ -12,7 +11,7 @@ void main() {
     // Start using our new formatting approach, much nicer!
     //
     // Oh yeah and zero fill our array.
-    for ( index = 0; index <= 44; index++ )
+    for ( index = 0; index <= MAX_WORD; index++ )
         histogram[index] = 0;
 
     while( ( character = getchar() ) != EOF ) {
@@ -30,7 +29,7 @@ void main() {
 	}
     }
 
-    for( index = 0; index <= 44; index++ ) {
+    for( index = 0; index <= MAX_WORD; index++ ) {
 	printf("%d: ", index);
 	for( hash_count = 0; hash_count < histogram[index]; hash_count++)
 	    putchar('#');
