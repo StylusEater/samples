@@ -21,6 +21,20 @@ void print_line_array(char *line) {
     reset_line_array(line);
 }
 
+/* reverse a line of characters and return the result */
+char* reverse(char *line) {
+    int index = 0;
+    int reversed_index = LINE_SIZE - 1;
+    char reversed_line[LINE_SIZE];
+    for( index; index < LINE_SIZE - 1; index++) {
+        reversed_line[index] = line[reversed_index];
+        index = index + 1;
+        reversed_index = reversed_index - 1;	
+    } 
+
+    return reversed_line;
+}
+
 void main()
 {
     int line_length = 0;
