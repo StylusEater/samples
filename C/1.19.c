@@ -32,7 +32,7 @@ char* reverse(char *line) {
         reversed_index = reversed_index - 1;	
     } 
 
-    return reversed_line;
+    return char* reversed_line;
 }
 
 void main()
