@@ -26,13 +26,14 @@ char* reverse(char *line) {
     int index = 0;
     int reversed_index = LINE_SIZE - 1;
     char reversed_line[LINE_SIZE];
+    char* rl = reversed_line;
     for( index; index < LINE_SIZE - 1; index++) {
         reversed_line[index] = line[reversed_index];
         index = index + 1;
         reversed_index = reversed_index - 1;	
     } 
 
-    return char* reversed_line;
+    return rl;
 }
 
 void main()
