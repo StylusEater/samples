@@ -12,6 +12,10 @@ Exercises from K&R
 
 ## Java
 
+Various exercises from Java Certification requirements. 
+
+
+
 
 ## Perl
 
